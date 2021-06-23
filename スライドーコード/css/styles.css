@@ -1,0 +1,33 @@
+.slide {
+  background-size: cover;
+  /* background-position: center top;  */
+  position: relative center top;
+  height: 400px;
+}
+/* .slideがrelative指定になっているため、高さの指定も必須。height:400px;を指定し、スライドショーの高さを決めています。 */
+.slide img {
+  position: absolute;
+        /* 基準点とすることが必須 */
+  width: 100% ;
+  top: 0;
+  left: 0; 
+  opacity: 0;
+          /* 不透明度 */
+  transition: all 1s ease-in-out;
+  height: 100%;
+  object-fit: contain;
+}
+/* p {
+  display: none;
+} */
+.ex {
+  position: relative center top;
+}
+.ex ul li a{
+  position: absolute;
+  color:blue;
+  top:50%;
+  right: 50%;
+  font-size: 50px;
+
+}
